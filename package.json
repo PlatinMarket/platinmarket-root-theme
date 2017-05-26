@@ -1,0 +1,18 @@
+{
+  "name": "_shared",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "jquery": "^3.2.1",
+    "font-platinmarket": "^1.1.1",
+    "animate.css": "^3.5.2"
+  },
+  "script": {
+    "login": "./src/login.js"
+  },
+  "style": {
+    "login": "./src/login.scss"
+  },
+  "assets": [
+    "./assets"
+  ]
+}

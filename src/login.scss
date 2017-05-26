@@ -1,0 +1,120 @@
+/**
+  Store/Default Theme Style in sass
+ */
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// Font platinmarket
+@import "~font-platinmarket/css/font-platinmarket.css";
+
+// Animate css
+@import "~animate.css/animate.css";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+
+  .btn{
+    cursor: pointer;
+  }
+
+
+  .container-fluid{
+
+    .back{
+      height: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    .card-container{
+      max-width: 500px;
+
+      h1.header{
+        color: #fff;
+        margin: 3rem 0;
+        font-weight: 300;
+      }
+
+      .card{
+        z-index: 2;
+        border-color: transparent;
+        -webkit-box-shadow: 0 0 10px rgba(0,0,0,.1);
+        box-shadow: 0 0 10px rgba(0,0,0,.1);
+        margin-bottom: 1rem;
+
+        .card-block{
+          padding: 3rem;
+
+          .form-group{
+            margin-bottom: 2rem;
+          }
+        }
+      }
+
+      .copyright{
+        margin-bottom: 1rem;
+
+        .logo{
+          text-decoration: none;
+
+          .pm-icon{
+            margin-bottom: 2rem;
+            font-size: 4rem;
+
+            &:first-letter,
+            &:before{
+              color: #aaa;
+            }
+          }
+
+          &:hover{
+            .pm-icon{
+              &:first-letter,
+              &:before{
+                color: #a0a0a0;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  html, body {
+    .container-fluid{
+      height: 100%;
+      >.row{
+        height: 100%;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 575px) {
+  html, body {
+    height: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  html, body {
+    .container-fluid{
+      .card-container{
+        .card{
+          .card-block{
+            padding: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}

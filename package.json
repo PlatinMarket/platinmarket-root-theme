@@ -1,8 +1,8 @@
 {
   "name": "platinmarket-root-theme",
-  "folder": "_root",
   "label": "Kök tema",
-  "scope": "web",
+  "folder": "_root",
+  "type": "web",
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
     "jquery": "^3.2.1",

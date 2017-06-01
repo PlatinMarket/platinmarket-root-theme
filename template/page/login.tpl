@@ -30,7 +30,7 @@
               </div>
               <div class="col-6 text-right">
                 <?php if ($fail_url) { ?>
-                  <a href="<?php echo $fail_url ?>" class=""><?php echo __('Cancel'); ?></a>
+                  <a href="cancel" class=""><?php echo __('Cancel'); ?></a>
                 <?php } ?>
                 <button type="submit" class="btn btn-primary"><?php echo __('Login'); ?></button>
               </div>

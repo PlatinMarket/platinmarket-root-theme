@@ -26,8 +26,8 @@ if (!document.hidden) $(window).triggerHandler('focus');
 
 // On submit form
 $('form').on('submit', (e) => {
-  $('input').attr('readonly', 'readonly');
-  $('button').attr('disabled', 'disabled');
+  $('input').blur().attr('readonly', 'readonly');
+  $('.btn').attr('disabled', 'disabled');
 });
 
 // Change focus state to proper element

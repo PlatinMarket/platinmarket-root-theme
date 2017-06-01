@@ -30,7 +30,7 @@
               </div>
               <div class="col-6 text-right">
                 <?php if ($fail_url) { ?>
-                  <a href="cancel" class=""><?php echo __('Cancel'); ?></a>
+                  <a href="cancel" class="btn btn-link"><?php echo __('Cancel'); ?></a>
                 <?php } ?>
                 <button type="submit" class="btn btn-primary"><?php echo __('Login'); ?></button>
               </div>
@@ -40,7 +40,7 @@
       </div>
       <div class="copyright text-center">
         <div class="logo-container">
-          <a class="logo" href="">
+          <a class="logo" target="_blank" href="http://www.platinmarket.com">
             <i class="pm pm-icon"></i>
           </a>
         </div>

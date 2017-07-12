@@ -1,5 +1,3 @@
-import $ from 'jquery';
-
 // Add animate css func
 $.fn.animateCss = function(animationName) {
   const animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
@@ -10,15 +8,13 @@ $.fn.animateCss = function(animationName) {
 
 // Run animation
 $(window).one('focus', function(){
-  if ($('form').hasClass('post_back')) {
-    $('.card').animateCss('shake');
-    $('.header').animateCss('flash');
-    return;
+  const isPostBack = $('form').hasClass('post_back');
+  $('.card').animateCss(isPostBack ? 'shake' : 'pulse');
+  $('.header').animateCss(isPostBack ? 'shake' : 'pulse');
+  if (!isPostBack) {
+    $('.back').animateCss('slideInDown');
+    $('.copyright').animateCss('fadeInDown');
   }
-  $('.card').animateCss('pulse');
-  $('.back').animateCss('slideInDown');
-  $('.header').animateCss('zoomInUp');
-  $('.copyright').animateCss('fadeInDown');
 });
 
 // Check focus state

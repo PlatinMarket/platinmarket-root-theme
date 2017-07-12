@@ -9,11 +9,13 @@
     "font-platinmarket": "^1.1.1",
     "animate.css": "^3.5.2"
   },
-  "script": {
-    "login": "./src/login.js"
-  },
-  "style": {
-    "login": "./src/login.scss"
+  "vendor": [
+    [ "jquery", "$", "jQuery", "window.jQuery" ],
+    [ "tether", "Tether" ],
+    "bootstrap"
+  ],
+  "entry": {
+    "login": [ "./src/login.scss", "./src/login.js" ]
   },
   "assets": [
     "./assets"

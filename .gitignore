@@ -2,6 +2,8 @@
 # WebServer
 .htaccess
 
+/deploy/*
+
 # Temp Files & Folders
 /tmp/cache/*
 !/tmp/cache/empty

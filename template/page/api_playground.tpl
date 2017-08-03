@@ -3,8 +3,8 @@
   <meta charset="UTF-8">
   <title>Platinmarket Api Playground</title>
 
-  <link href="<?php echo $this['asset']->resolve('root/swagger/css/min.css'); ?>" rel='stylesheet' type='text/css'/>
-  <script src="<?php echo $this['asset']->resolve('root/swagger/lib/min.js'); ?>" type='text/javascript'></script>
+  <link href="<?php echo $this['asset']->resolve('_root/swagger/css/min.css'); ?>" rel='stylesheet' type='text/css'/>
+  <script src="<?php echo $this['asset']->resolve('_root/swagger/lib/min.js'); ?>" type='text/javascript'></script>
 
 
   <!-- Some basic translations -->
@@ -18,7 +18,7 @@
       if (url && url.length > 1) {
         url = decodeURIComponent(url[1]);
       } else {
-        url = "/assets/swagger/api/swagger.json";
+        url = "<?php echo $this['asset']->resolve('_root/swagger/api/swagger.json'); ?>";
       }
 
       hljs.configure({

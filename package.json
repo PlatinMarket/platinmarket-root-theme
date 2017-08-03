@@ -10,12 +10,23 @@
     "animate.css": "^3.5.2"
   },
   "vendor": [
-    [ "jquery", "$", "jQuery", "window.jQuery" ],
-    [ "tether", "Tether" ],
+    [
+      "jquery",
+      "$",
+      "jQuery",
+      "window.jQuery"
+    ],
+    [
+      "tether",
+      "Tether"
+    ],
     "bootstrap"
   ],
   "entry": {
-    "login": [ "./src/login.scss", "./src/login.js" ]
+    "login": [
+      "./src/login.scss",
+      "./src/login.js"
+    ]
   },
   "assets": [
     "./assets"

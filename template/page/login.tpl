@@ -1,4 +1,4 @@
-<?php $this->extend('login') ?>
+<?php $this->extend('layout/login') ?>
 <div class="container-fluid">
   <div class="back bg-primary <?php if ($this['form']->isPost() || $this['form']->errorFields()) { ?> bg-danger <?php } ?>"></div>
   <div class="row justify-content-center">

@@ -1,0 +1,36 @@
+/**
+  Store/Default Theme Style in sass
+ */
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// Font platinmarket
+@import "~font-platinmarket/css/font-platinmarket.css";
+
+// Graphiql
+@import "~graphiql/graphiql.css";
+
+body,html {
+  height: 100%;
+}
+
+body {
+  padding-top: 64px;
+  padding-bottom: 10px;
+}
+
+.card-title {
+  padding: 20px;
+  margin-bottom: 0;
+  border-bottom: 1px solid $card-border-color;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+#graphiql {
+  height: calc(100vh - (64px + 70px));
+  min-height: 400px;
+}

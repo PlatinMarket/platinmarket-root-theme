@@ -4,10 +4,12 @@
   "folder": "_root",
   "type": "web",
   "dependencies": {
-    "bootstrap": "^4.0.0-alpha.6",
-    "jquery": "^3.2.1",
+    "animate.css": "^3.5.2",
+    "bootstrap": "^4.0.0-beta.2",
     "font-platinmarket": "^1.1.1",
-    "animate.css": "^3.5.2"
+    "graphiql": "^0.11.10",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.9"
   },
   "vendor": [
     [
@@ -17,8 +19,8 @@
       "window.jQuery"
     ],
     [
-      "tether",
-      "Tether"
+      "popper.js",
+      "Popper"
     ],
     "bootstrap"
   ],
@@ -26,9 +28,10 @@
     "login": [
       "./src/login.scss",
       "./src/login.js"
+    ],
+    "home": [
+      "./src/home.scss",
+      "./src/home.js"
     ]
-  },
-  "assets": [
-    "./assets"
-  ]
+  }
 }
